@@ -9,10 +9,7 @@
 ```c
 #include <stdio.h>
 #include <locale.h>
-
 #include <stdio.h>
-
-
 int ab(int a, int b) {
     while (b != 0) {
         int temp = b;
@@ -21,12 +18,9 @@ int ab(int a, int b) {
     }
     return a;
 }
-
-
 int qb(int a, int b) {
     return (a * b) / ab(a, b);
 }
-
 int main() {
     int p;
     printf("Enter count of numbers: ");
