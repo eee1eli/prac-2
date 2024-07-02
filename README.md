@@ -1,15 +1,22 @@
-
-
-```markdown
 # Практична робота 2
 Виконав Бурмака Ігор
+
+## Опис
+
+Ця програма знаходить найбільший спільний дільник (НСД) набору чисел, використовуючи алгоритм Евкліда. Програма приймає кількість чисел (від 2 до 20) та самі числа, а потім обчислює НСД.
+
+## Використання
+
+1. Введіть кількість чисел (від 2 до 20).
+2. Введіть самі числа.
+3. Програма обчислить та виведе НСД цих чисел.
 
 ## Код
 
 ```c
 #include <stdio.h>
 #include <locale.h>
-#include <stdio.h>
+
 int ab(int a, int b) {
     while (b != 0) {
         int temp = b;
@@ -18,10 +25,14 @@ int ab(int a, int b) {
     }
     return a;
 }
+
 int qb(int a, int b) {
     return (a * b) / ab(a, b);
 }
+
 int main() {
+    setlocale(LC_ALL, "Ukr");
+
     int p;
     printf("Enter count of numbers: ");
     scanf("%d", &p);
@@ -45,4 +56,3 @@ int main() {
     printf("NSD: %d\n", result);
     return 0;
 }
-```
