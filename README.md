@@ -51,3 +51,4 @@ int main() {
     printf("NSD: %d\n", result);
     return 0;
 }
+```
